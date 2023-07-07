@@ -1,0 +1,121 @@
+@media (min-width: 36rem){
+    .hero-title {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: .8rem;
+    }
+    .hero-button {
+        display: inline-block;
+        font-size: .75rem;
+        margin-bottom: 7rem;
+        padding: 0.69rem 2rem;
+    }
+
+    .hero {
+        align-items: flex-end;
+    }
+
+    .hero-con {
+        padding: 0 2.5rem;
+    }
+}
+@media (min-width: 48rem){
+}
+@media (min-width: 62rem){
+}
+@media (min-width: 75rem){
+    .drop-menu.show {
+        display: block;
+    }
+
+    .hero {
+        max-height: 40rem;
+    }
+
+    .hero-button {
+        margin-bottom: 9.8rem;
+    }
+
+    nav {
+        position: fixed;
+        top: 2.9rem;
+        left: 0;
+        right: 0;
+        border-top: 1px solid rgba(255,255,255,0.24);
+    }
+
+    .nav-menu {
+        margin-right: 8.2rem;
+    }
+
+    .nav-bottom-line {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        right: -100%;
+        border: none;
+        height: 0;
+        border-top: 1px solid rgba(255,255,255,0.24);
+        display: block;
+        margin: 0;
+    }
+
+    .logo {
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .burger, .nav-menu-heading {
+        display: none;
+    }
+
+    .nav-menu-item:nth-child(2) {
+        color: rgba(222,137,10,1);
+        background-color: transparent;
+    }
+
+    .nav-menu, .nav-menu.active {
+        position: static;
+        display: flex;
+        flex: 1;
+        height: auto;
+        background-color: transparent;
+        color: #fff;
+        justify-content: flex-end;
+        transform: translateX(0);
+    }
+
+    .nav-menu-item {
+        font-size: 1rem;
+        line-height: auto;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 0.8rem;
+        padding-bottom: .2rem;
+    }
+
+    .text-img-con {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-con {
+        display: grid;
+        gap: 0.625rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 20.51875rem;
+    }
+
+    /* single */
+    .text-img-con > img {
+        width: 0;
+        height: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+}
+@media (min-width: 87.5rem){
+}
