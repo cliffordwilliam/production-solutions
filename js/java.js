@@ -62,5 +62,17 @@ function fadeImages() {
 
 setInterval(fadeImages, fadeDuration);
 
+// // Change nav bg color when scrolling down
+// window.addEventListener('scroll', function() {
+//   var element = document.getElementById('myElement');
+//   var scrollPosition = window.scrollY;
 
-  
+//   // Adjust the value below based on the desired scroll position
+//   var scrollThreshold = 200;
+
+//   if (scrollPosition > scrollThreshold) {
+//     element.classList.add('scrollClass');
+//   } else {
+//     element.classList.remove('scrollClass');
+//   }
+// });

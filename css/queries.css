@@ -20,6 +20,9 @@
     }
 }
 @media (min-width: 48rem){
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (min-width: 62rem){
 }
@@ -123,6 +126,10 @@
         min-width: 100%;
         min-height: 100%;
         object-fit: cover;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media (min-width: 87.5rem){
