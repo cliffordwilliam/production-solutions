@@ -46,6 +46,14 @@ nav * {
     margin-left: 1rem;
 }
 
+.pc-logo {
+    display: none;
+}
+
+.mb-logo {
+    display: block;
+}
+
 .burger {
     border: none;
     display: flex;

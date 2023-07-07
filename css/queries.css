@@ -65,6 +65,14 @@
         font-weight: 600;
     }
 
+    .pc-logo {
+        display: block;
+    }
+    
+    .mb-logo {
+        display: none;
+    }
+
     .burger, .nav-menu-heading {
         display: none;
     }
