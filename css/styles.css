@@ -404,9 +404,14 @@ nav * {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
 .card-image-con {
     height: 16.0225rem;
     background-color: #eee;
+    overflow: hidden;
 }
 
 .card-image {
@@ -416,6 +421,7 @@ nav * {
     min-width: 100%;
     /* object-fit: contain; */
     object-fit: cover;
+    transition: transform 0.4s ease-in-out;
 }
 
 .card-body {
