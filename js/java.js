@@ -38,41 +38,43 @@ function hideSubMenu(submenu) {
   // submenu.style.display = 'none';
 }
 
-// Fades in and out fading images
-const fadingImages = document.querySelectorAll('.fading-img');
-const fadeDuration = 6000; // Duration in milliseconds
+// // Fades in and out fading images
+// const fadingImages = document.querySelectorAll('.fading-img');
+// const fadeDuration = 6000; // Duration in milliseconds
 
-let currentIndex = 0;
+// let currentIndex = 0;
 
-function fadeOut() {
-  fadingImages[currentIndex].style.opacity = '0';
-}
+// function fadeOut() {
+//   fadingImages[currentIndex].style.opacity = '0';
+// }
 
-function fadeIn() {
-  fadingImages[currentIndex].style.opacity = '1';
-}
+// function fadeIn() {
+//   fadingImages[currentIndex].style.opacity = '1';
+// }
 
-function fadeImages() {
-  fadeOut();
+// function fadeImages() {
+//   fadeOut();
 
-  currentIndex = (currentIndex + 1) % fadingImages.length;
+//   currentIndex = (currentIndex + 1) % fadingImages.length;
 
-  fadeIn();
-}
+//   fadeIn();
+// }
 
-setInterval(fadeImages, fadeDuration);
+// setInterval(fadeImages, fadeDuration);
 
-// // Change nav bg color when scrolling down
-// window.addEventListener('scroll', function() {
-//   var element = document.getElementById('myElement');
-//   var scrollPosition = window.scrollY;
+// Change nav bg color when scrolling down
+window.addEventListener('scroll', function() {
+  var element = document.querySelector('header');
+  var contactElement = document.querySelector('a.contacts.iconed.start');
+  var scrollPosition = window.scrollY;
 
-//   // Adjust the value below based on the desired scroll position
-//   var scrollThreshold = 200;
+  // Get the height of the contactElement
+  var scrollThreshold = contactElement.offsetHeight;
 
-//   if (scrollPosition > scrollThreshold) {
-//     element.classList.add('scrollClass');
-//   } else {
-//     element.classList.remove('scrollClass');
-//   }
-// });
+  if (scrollPosition > scrollThreshold) {
+    element.classList.add('solid');
+  } else {
+    element.classList.remove('solid');
+  }
+});
+

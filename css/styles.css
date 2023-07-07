@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     margin: 0;
 }
 
@@ -19,6 +19,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .nav-bottom-line {
@@ -153,6 +154,7 @@ nav * {
     top: 100%;
     left: 0;
     display: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .drop-menu.show {
@@ -241,7 +243,7 @@ nav * {
 }
 
 .hero-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     color: #fff;
     font-weight: 400;
     font-size: 7vw;
@@ -252,7 +254,7 @@ nav * {
 }
 
 .hero-button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     display: inline-block;
     /* text-align: center; */
     background-color: #DE890ACC;
@@ -312,7 +314,7 @@ nav * {
 } */
 
 .main-content p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     color: #222;
     font-size: 1.0625rem;
     font-weight: 300;
@@ -377,7 +379,8 @@ nav * {
 
 .card {
     /* border: 1px solid #F3F1F1; */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     display: flex;
     flex-direction: column;
@@ -411,8 +414,8 @@ nav * {
     width: 0;
     min-height: 100%;
     min-width: 100%;
-    object-fit: contain;
-    /* object-fit: cover; */
+    /* object-fit: contain; */
+    object-fit: cover;
 }
 
 .card-body {
@@ -450,6 +453,114 @@ nav * {
     margin-top: auto;
 }
 
-.card .card-prompt > svg {
+.inline-svg {
     vertical-align: -.125em;
+}
+
+.news-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.day, .month {
+    background-color: rgba(222,137,10,1);
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.090909090909091;
+    padding: 0.4375rem 0.9375rem 0.25rem 0.9375rem;
+    color: #000;
+    text-align: center;
+}
+
+.month {
+    background-color: #FBD232;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 0.25rem 0.9375rem 0.4375rem 0.9375rem;
+}
+
+footer {
+    color: #fff;
+    background: 
+                linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.15) 100%),
+                linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 100%),  
+                linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.25) 100%), 
+                url("../assets/gowvgnaf-e1688315451174-gigapixel-art-scale-6_00x.png") no-repeat center center scroll;
+    background-size: cover;
+    margin-top: 7.81rem;
+    padding-top: 4.375rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template: auto / auto;
+    grid-auto-rows: auto;
+    gap: 1.125rem;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.footer-logo {
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1.5625rem;
+}
+
+.footer-paragraph {
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1.42857rem;
+    line-height: 1.7;
+}
+
+.footer-cert {
+    height: 4.270625rem;
+    width: auto;
+}
+
+.footer-heading {
+    margin-bottom: 1.5625rem;
+    font-family: 'Montserrat';
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.footer-text {
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.428571428571429;
+}
+
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    color: rgba(222,137,10,1);
+}
+
+.footer-copyright-con {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 0.9375rem;
+    padding-bottom: 0,6125rem;
+}
+
+.footer-copyright {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.footer-copyright > a {
+    color: rgba(222,137,10,1);
+    text-decoration: none;
 }
